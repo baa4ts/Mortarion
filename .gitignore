@@ -1,4 +1,19 @@
-**/.vscode
+# Ignorar carpetas de configuración de VSCode
+.vscode/
+
+# Archivos binarios ejecutables
 *.exe
+
+# Archivos objeto
 *.o
-**/bin
+
+# Carpeta bin (compilados)
+bin/
+
+# Archivos temporales de compilación
+*.obj
+*.dll
+*.pdb
+
+# Archivos de log
+*.log
