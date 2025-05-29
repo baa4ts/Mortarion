@@ -10,7 +10,9 @@ int main()
 
     Servidor.Post("/", [](const httplib::Request &req, httplib::Response &res) {
         std::cout << "=== Nueva petición POST ===\n";
+        auto Verificacion = req.headers.find("X-Auth-Token");
         std::cout << req.body << std::endl;
+        std::cout << Verificacion->first << "  " << Verificacion->second << std::endl;
         std::cout << "===========================\n";
 
         res.set_content("Recibido", "text/plain");

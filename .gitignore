@@ -9,6 +9,7 @@
 
 # Carpeta bin (compilados)
 bin/
+/bin/**
 
 # Archivos temporales de compilación
 *.obj
